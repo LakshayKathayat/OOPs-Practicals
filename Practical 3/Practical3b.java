@@ -12,8 +12,7 @@ interface Scannable {
     void scan();
 }
 
-class AllInOnePrinter extends Device
-        implements Printable, Scannable {
+class AllInOnePrinter extends Device implements Printable, Scannable {
     public void print() {
         System.out.println("Printing document...");
     }
