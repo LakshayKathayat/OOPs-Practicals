@@ -1,7 +1,6 @@
 //Single Inheritance
 class Vehicle {
     String brand = "Toyota";
-
     void start() {
         System.out.println("Vehicle is starting.");
     }
@@ -9,7 +8,6 @@ class Vehicle {
 
 class Car extends Vehicle {
     int speed = 120;
-
     void display() {
         System.out.println("Brand: " + brand);
         System.out.println("Speed: " + speed + " km/h");
@@ -17,10 +15,8 @@ class Car extends Vehicle {
 }
 
 //Multi-level inheritance
-
 class Person {
     String name = "Rahul";
-
     void displayName() {
         System.out.println("\nName: " + name);
     }
@@ -28,7 +24,6 @@ class Person {
 
 class Employee extends Person {
     int employeeId = 101;
-
     void displayEmployee() {
         System.out.println("Employee ID: " + employeeId);
     }
@@ -36,14 +31,12 @@ class Employee extends Person {
 
 class Manager extends Employee {
     String department = "IT";
-
     void displayManager() {
         System.out.println("Department: " + department);
     }
 }
 
 //Hierarchial Inheritance
-
 class Shape {
     void display() {
         System.out.println("\nThis is a shape.");
@@ -52,7 +45,6 @@ class Shape {
 
 class Circle extends Shape {
     double radius = 5;
-
     void area() {
         System.out.println("Circle area: "+ (3.14 * radius * radius));
     }
@@ -60,7 +52,6 @@ class Circle extends Shape {
 
 class Rectangle extends Shape {
     int length = 4, breadth = 6;
-
     void area() {
         System.out.println("Rectangle area: "+ (length * breadth));
     }
